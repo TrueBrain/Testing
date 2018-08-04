@@ -2,6 +2,14 @@ stages:
   - build
   - deploy
 
+notifications:
+  push:
+    irc:
+      - truebrain.test
+  pull-request:
+    irc:
+      - truebrain.test
+
 docker-build:
   stage: build
   dorpsgek: build
