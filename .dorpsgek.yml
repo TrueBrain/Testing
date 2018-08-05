@@ -1,0 +1,26 @@
+stages:
+  - build
+  - deploy
+
+notifications:
+  push:
+    irc:
+      - dorpsgek
+      - openttd.test
+
+docker-build:
+  stage: build
+  dorpsgek: build
+  only:
+    - testing
+  environment:
+    name: build
+
+production:
+  stage: deploy
+  dorpsgek: deploy
+  only:
+    - testing
+  environment:
+    name: production
+
