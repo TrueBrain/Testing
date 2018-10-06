@@ -4,6 +4,8 @@ stages:
 
 notifications:
   push:
+    only:
+      - testing
     irc:
       - truebrain.test
   pull-request:
