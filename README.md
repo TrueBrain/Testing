@@ -1,1 +1,1 @@
-Are we having fun yet? 
+Are we having fun yet? Well, are we?
