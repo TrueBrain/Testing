@@ -1,0 +1,9 @@
+notifications:
+  global:
+    irc:
+    - dorpsgek-test
+
+  pull-request:
+  push:
+  issue:
+  tag-created:
