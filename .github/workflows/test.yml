@@ -1,0 +1,17 @@
+name: Test
+
+on:
+- push
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
+    - name: Test
+      run: |
+        docker buildx ls
+
